@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-src = cv2.VideoCapture(0)
+src = cv2.VideoCapture("Job Interview_ I Want to Learn (ESL).mp4")
 cascade = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
 
 if src.isOpened() == False:

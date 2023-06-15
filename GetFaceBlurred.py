@@ -40,8 +40,6 @@ while True:
 src.release()
 writer.release()
 
-# os.remove("temp.avi")
-
 src = cv2.VideoCapture("temp.avi")
 
 if src.isOpened() == False:
@@ -51,7 +49,12 @@ while True:
     ret, fr = src.read()
     if ret:
         cv2.imshow("Result", fr)
+
+        if cv2.waitKey(25) & 0xFF == ord('q'):
+            break
     else:
         break
 
 src.release()
+
+os.remove("temp.avi")

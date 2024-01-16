@@ -1,10 +1,6 @@
 # BlurBadGuyFaces4Video
 An app to let you automatically blur bad guy's faces in the video you upload. Mainly using keras, pygame, tkinter and opencv.  
 
-# Foobar
-
-Foobar is a Python library for dealing with word pluralization.
-
 ## Requirements
 
 numpy==1.23.4  
